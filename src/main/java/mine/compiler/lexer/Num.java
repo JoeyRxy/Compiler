@@ -5,10 +5,14 @@ package mine.compiler.lexer;
  */
 public class Num extends Token {
 
-    public final int value;
+    public final double value;
 
-    public Num(int v) {
+    public Num(double value) {
         super(Tag.NUM);
-        value = v;
+        this.value = value;
+    }
+
+    public double getValue() {
+        return value;
     }
 }

@@ -3,7 +3,6 @@ package mine.compiler.lexer;
 /**
  * Tag
  */
-public class Tag {
-
-    public final static int NUM = 256, ID = 257, TRUE = 258, FALSE = 259;
+public enum Tag {
+    KEYWORD, TYPE, NUM, ID, OPTR, TRUE, FALSE, FUNCTION;
 }

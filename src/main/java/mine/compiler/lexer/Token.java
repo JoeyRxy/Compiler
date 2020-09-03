@@ -3,11 +3,15 @@ package mine.compiler.lexer;
 /**
  * Token
  */
-public class Token {
+abstract public class Token {
 
-    public final int tag;
+    private final Tag tag;
 
-    public Token(int t) {
-        tag = t;
+    public Token(Tag tag) {
+        this.tag = tag;
+    }
+
+    public Tag getTag() {
+        return tag;
     }
 }
